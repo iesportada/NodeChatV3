@@ -2,18 +2,23 @@ extends layout
 
 block content
   h1= title
-  h2#numClientes 
+  h8#numClientes 
 
-  p Welcome to #{title}
-  ul#mensajes 
+  .row
+    .col-12.col-md-6
+      p Welcome to #{title}
+      ul#mensajes 
 
-  div
-    label Usuario: 
-    input#inputUsuario(type="text")
-  p
-  div
-    label Mensaje: 
-    input#inputMensaje(type="text")
+  .row
+    .col-12.col-md-6
+      p
+      label Usuario: 
+      input#inputUsuario(type="text")
+  .row 
+    .col-12.col-md-6
+      p
+      label Mensaje: 
+      input#inputMensaje(type="text")
   p 
   button#btnMensaje Enviar
   
